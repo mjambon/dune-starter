@@ -1,0 +1,11 @@
+(executables
+ ((libraries (sample-library))
+  (names (sample_tests))
+  (modules
+   (sample_tests))))
+
+(alias
+ ((name runtest)
+  (package sample-library)
+  (deps (sample_tests.exe))
+  (action (run ${<}))))

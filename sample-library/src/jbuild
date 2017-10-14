@@ -1,0 +1,8 @@
+(jbuild_version 1)
+
+(library
+ ((name sample_library)   ; doesn't support '-' in the name
+  (public_name sample-library)
+  (wrapped false)
+  (libraries (unix str))
+  (synopsis "This is a short description of the library.")))

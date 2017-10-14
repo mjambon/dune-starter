@@ -1,0 +1,11 @@
+opam-version: "1.2"
+maintainer: "YOUR EMAIL ADDRESS"
+authors: ["YOUR NAME"]
+homepage: "https://github.com/USERNAME/sample-library"
+bug-reports: "https://github.com/USERNAME/sample-library/issues"
+dev-repo: "https://github.com/USERNAME/sample-library.git"
+build: [
+  ["jbuilder" "build" "-p" name "-j" jobs]
+]
+depends: ["jbuilder" {build}]
+available: [ ocaml-version >= "4.01.0"]
