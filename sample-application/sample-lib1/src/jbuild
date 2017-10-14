@@ -1,8 +1,0 @@
-(jbuild_version 1)
-
-(library
- ((name sample_lib1)   ; doesn't support '-' in the name
-  (public_name sample-lib1)
-  (wrapped false)
-  (libraries (unix str))
-  (synopsis "This is a short description of the library.")))
