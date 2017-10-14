@@ -9,3 +9,12 @@ This repository provides 2 sets of templates to start an OCaml project:
   are built as libraries, which can be tested independently if desired.
   One or several executables are built using those libraries. This
   setup is ideal for medium-sized OCaml applications.
+
+How to set up your OCaml project:
+
+1. Clone this repository:
+   `git clone https://github.com/mjambon/jbuilder-starter`
+2. Choose a template between `library` and `application` (see
+   above).
+3. Copy and rename files as needed e.g.
+   `cp -a jbuilder-starter/application MY-PROJECT`
