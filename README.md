@@ -21,7 +21,8 @@ How to set up your OCaml project:
    above).
 3. Copy files as needed e.g.
    `cp -a jbuilder-starter/sample-application MY-PROJECT`
-4. Inspect all the files, replace the placeholders.
+4. Inspect all the files, replace all placeholders in ALL-CAPS or that
+   start with `sample`.
 5. Rename any file that starts with `sample`. Other file names are standard.
 6. Consult the [jbuilder docs](https://jbuilder.readthedocs.io/) as
    needed.

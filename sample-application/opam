@@ -1,0 +1,15 @@
+opam-version: "1.2"
+
+build: [
+  ["jbuilder" "build" "-p" name "-j" jobs]
+]
+
+build-test: [
+  ["jbuilder" "runtest" "-p" name]
+]
+
+depends: [
+  "jbuilder" {build}
+]
+
+available: [ ocaml-version >= "4.01.0"]
