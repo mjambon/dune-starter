@@ -14,4 +14,7 @@ test:
 
 # Clean up
 clean:
+# Remove files produced by jbuilder.
 	jbuilder clean
+# Remove remaining files/folders ignored by git as defined in .gitignore (-X).
+	git clean -dfXq
