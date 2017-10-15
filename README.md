@@ -1,4 +1,4 @@
-# jbuilder starter kits
+# Jbuilder starter kit
 
 This repository provides 2 sets of templates to help you start an
 OCaml project:
