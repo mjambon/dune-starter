@@ -16,5 +16,3 @@ build-test: [
 depends: [
   "jbuilder" {build}
 ]
-
-available: [ ocaml-version >= "4.01.0"]

@@ -1,18 +1,23 @@
-# Invoke `make all` to build, `make clean` to clean up, etc.
-# If you don't want to use make, you can run the commands directly
-# such as `jbuilder build @DEFAULT @install`
+# Invoke `make` to build, `make clean` to clean up, etc.
+
+.PHONY: default all utop test clean
+
+default: all
 
 # Build one library and one standalone executable that implements
 # multiple subcommands and uses the library.
 # The library can be loaded in utop for interactive testing.
 all:
 	jbuilder build @DEFAULT @install
+	@test -L bin || ln -s _build/install/default/bin .
 
-.PHONY: clean all test
+# Launch utop such that it finds our library.
+utop: all
+	OCAMLPATH=_build/install/default/lib:$(OCAMLPATH) utop
 
 # Build and run tests
-test:
-	jbuilder runtest
+test: all
+	./bin/sample-exe test
 
 # Clean up
 clean:

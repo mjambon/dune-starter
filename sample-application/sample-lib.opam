@@ -1,15 +1,14 @@
 opam-version: "1.2"
+maintainer: "YOUR EMAIL ADDRESS"
+authors: ["YOUR NAME"]
+homepage: "https://github.com/USERNAME/sample-application"
+bug-reports: "https://github.com/USERNAME/sample-application/issues"
+dev-repo: "https://github.com/USERNAME/sample-application.git"
 
 build: [
   ["jbuilder" "build" "-p" name "-j" jobs]
 ]
 
-build-test: [
-  ["jbuilder" "runtest" "-p" name]
-]
-
 depends: [
-  "jbuilder" {build}
+  "jbuilder" {build & >= "1.0+beta14"}
 ]
-
-available: [ ocaml-version >= "4.01.0"]
