@@ -23,8 +23,8 @@ application, but earlier versions should be fine for the sample library.
 2. Choose a template between `sample-library` and `sample-application` (see
    above).
 3. Copy files into a git repository e.g.
-   `cp -a jbuilder-starter/sample-application MY-PROJECT`,
-   `cd MY-PROJECT && git init && git add .`
+   `cp -a jbuilder-starter/sample-application foobar`,
+   `cd foobar && git init && git add .`
 4. Play around and make sure everything works. Try `make`, `make test`,
    `make clean`.
 5. Inspect all the files, replace all placeholders.
