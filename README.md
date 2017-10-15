@@ -27,9 +27,11 @@ application, but earlier versions should be fine for the sample library.
    `cd MY-PROJECT && git init && git add .`
 4. Play around and make sure everything works. Try `make`, `make test`,
    `make clean`.
-5. Inspect all the files, replace all placeholders in ALL-CAPS or that
-   start with `sample`. You can use `git grep sample .` to get the
-   full list of files to modify.
+5. Inspect all the files, replace all placeholders.
+   Anything that starts with `sample` should be
+   replaced. Additionally, some ALL-CAPS placeholders need to be
+   replaced in the opam files.
+   You can use `git grep sample .` to get the full list of files to modify.
 6. Rename any file that starts with `sample`. Other file names are standard.
 7. Consult the [jbuilder docs](https://jbuilder.readthedocs.io/) as
    needed.
