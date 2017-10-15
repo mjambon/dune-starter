@@ -32,7 +32,9 @@ application, but earlier versions should be fine for the sample library.
    replaced. Additionally, some ALL-CAPS placeholders need to be
    replaced in the opam files.
    You can use `git grep sample .` to get the full list of files to modify.
-6. Rename any file that starts with `sample`. Other file names are standard.
+6. Rename any file that starts with `sample` e.g.
+   `git mv sample-lib.opam foobar.opam`. Other file
+   names are standard.
 7. Consult the [jbuilder docs](https://jbuilder.readthedocs.io/) as
    needed.
 
