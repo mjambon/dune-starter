@@ -7,8 +7,8 @@ OCaml project:
    providing a single opam package. This is ideal for small open-source
    projects that distribute a library.
 * `sample-application`: suitable for a multi-folder application. Subfolders
-  are built as libraries, which can be tested independently if desired.
-  One or several executables are built using those libraries. This
+  are compiled into a single big library.
+  A single executable is built using this library. This
   setup is ideal for medium-sized OCaml applications.
 
 Requirements: opam, git, make, jbuilder.
@@ -33,3 +33,6 @@ application, but earlier versions should be fine for the sample library.
 6. Rename any file that starts with `sample`. Other file names are standard.
 7. Consult the [jbuilder docs](https://jbuilder.readthedocs.io/) as
    needed.
+
+Thanks to the authors of jbuilder and @rgrinberg in particular for
+this great tool!
