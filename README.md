@@ -16,14 +16,15 @@ Requirements: opam, git, make, jbuilder.
 Jbuilder version 1.0+beta14 or higher is required for the sample
 application, but earlier versions should be fine for the sample library.
 
-How to set up your OCaml project:
+## How to set up your OCaml project:
 
 1. Clone this repository:
    `git clone https://github.com/mjambon/jbuilder-starter`
 2. Choose a template between `sample-library` and `sample-application` (see
    above).
-3. Copy files as needed e.g.
-   `cp -a jbuilder-starter/sample-application MY-PROJECT`
+3. Copy files into a git repository e.g.
+   `cp -a jbuilder-starter/sample-application MY-PROJECT`,
+   `cd MY-PROJECT && git init && git add .`
 4. Play around and make sure everything works. Try `make`, `make test`,
    `make clean`.
 5. Inspect all the files, replace all placeholders in ALL-CAPS or that
