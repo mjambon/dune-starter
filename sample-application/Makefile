@@ -8,7 +8,7 @@ default: all
 # multiple subcommands and uses the library.
 # The library can be loaded in utop for interactive testing.
 all:
-	jbuilder build @DEFAULT @install
+	jbuilder build @install
 	@test -L bin || ln -s _build/install/default/bin .
 
 # Launch utop such that it finds our library.
