@@ -1,5 +1,5 @@
 # Invoke `make all` to build, `make clean` to clean up, etc.
-# If you want to use make, you can run the commands directly
+# If you don't want to use make, you can run the commands directly
 # such as `jbuilder build @install`
 
 # Build
