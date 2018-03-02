@@ -1,3 +1,5 @@
+**Disclaimer: This was done when I was discovering jbuilder. Certain things in here should be done differently. At least don't use `(wrapped false)`.**
+
 # Jbuilder starter kit
 
 This repository provides 2 sets of templates to help you start an
