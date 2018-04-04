@@ -1,8 +1,0 @@
-(jbuild_version 1)
-
-(executables
- ((names (sample_main))
-  (public_names (sample-exe))
-  (modules (sample_main))
-  (libraries (sample-lib))
-  (package sample-exe)))

@@ -1,27 +1,24 @@
 # Invoke `make` to build, `make clean` to clean up, etc.
 
-.PHONY: default all utop test clean
+.PHONY: default build install uninstall utop test clean
 
-default: all
+default: build
 
-# Build one library and one standalone executable that implements
-# multiple subcommands and uses the library.
-# The library can be loaded in utop for interactive testing.
-all:
-	jbuilder build @install
-	@test -L bin || ln -s _build/install/default/bin .
+build:
+	$(MAKE) -C src build
 
-# Launch utop such that it finds our library.
-utop: all
-	OCAMLPATH=_build/install/default/lib:$(OCAMLPATH) utop
+# Install all libraries and executables
+install:
+	$(MAKE) -C src install
+
+uninstall:
+	$(MAKE) -C src uninstall
 
 # Build and run tests
-test: all
-	./bin/sample-exe test
+test:
+	$(MAKE) -C src test
 
-# Clean up
 clean:
-# Remove files produced by jbuilder.
-	jbuilder clean
+	$(MAKE) -C src clean
 # Remove remaining files/folders ignored by git as defined in .gitignore (-X).
 	git clean -dfXq

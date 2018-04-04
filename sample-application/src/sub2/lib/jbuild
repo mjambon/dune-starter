@@ -1,0 +1,7 @@
+(jbuild_version 1)
+
+(library
+ ((name sub2)
+  (public_name sub2)
+  (libraries (unix str sub1))
+  (synopsis "This is a short description of the sub2 library.")))

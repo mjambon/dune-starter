@@ -1,4 +1,7 @@
-**Disclaimer: This was done when I was discovering jbuilder. Certain things in here should be done differently. At least don't use `(wrapped false)`.**
+NOTES:
+* how to have just one opam package instead of one per subfolder?
+
+
 
 # Jbuilder starter kit
 

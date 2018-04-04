@@ -1,2 +1,0 @@
-let now () =
-  Unix.gettimeofday ()

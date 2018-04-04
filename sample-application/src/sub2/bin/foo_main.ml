@@ -16,7 +16,7 @@ let test argv_offset =
    command-line arguments.
 *)
 let run argv_offset =
-  Sample_module3.do_something ()
+  Sub2.A.do_something ()
 
 (* Add your own subcommands as needed. *)
 let subcommands = [
