@@ -6,10 +6,6 @@
 
 open Printf
 
-(* Run your test suite here. *)
-let test argv_offset =
-  print_endline "OK"
-
 (*
    You can do anything you want.
    You may want to use Arg.parse_argv to read the remaining
@@ -18,10 +14,13 @@ let test argv_offset =
 let run argv_offset =
   Sub2.A.do_something ()
 
+let walk argv_offset =
+  print_endline "Nice."
+
 (* Add your own subcommands as needed. *)
 let subcommands = [
-  "test", test;
   "run", run;
+  "walk", walk;
 ]
 
 let help () =

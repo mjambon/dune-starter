@@ -1,0 +1,7 @@
+(jbuild_version 1)
+
+(library
+ ((name test_sub1)
+  (public_name test-sub1)
+  (libraries (sub1))
+  (synopsis "Tests for sub1")))
