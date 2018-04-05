@@ -1,44 +1,29 @@
-**Disclaimer: This was done when I was discovering jbuilder. Certain things in here should be done differently. At least don't use `(wrapped false)`.**
+# Dune/Jbuilder starter kit
 
-# Jbuilder starter kit
+This repository provides templates to help you start an
+OCaml project. It can be used to create multiple libraries, multiple
+executables, and test suites.
 
-This repository provides 2 sets of templates to help you start an
-OCaml project:
-
-* `sample-library`: suitable for a pure OCaml library, in a single folder,
-   providing a single opam package. This is ideal for small open-source
-   projects that distribute a library.
-* `sample-application`: suitable for a multi-folder application. Subfolders
-  are compiled into a single big library.
-  A single executable is built using this library. This
-  setup is ideal for medium-sized OCaml applications.
+It is structured to accommodate (in theory) non-OCaml components under
+`src/` and files other than source code at the project's root,
+e.g. you could create a global `doc/` folder next to `src/`.
 
 Requirements: opam, git, make, jbuilder.
-
-Jbuilder version 1.0+beta14 or higher is required for the sample
-application, but earlier versions should be fine for the sample library.
 
 ## How to set up your OCaml project:
 
 1. Clone this repository:
    `git clone https://github.com/mjambon/jbuilder-starter`
-2. Choose a template between `sample-library` and `sample-application` (see
-   above).
-3. Copy files into a git repository e.g.
-   `cp -a jbuilder-starter/sample-application foobar`,
+2. Copy files into a git repository e.g.
+   `cp -a jbuilder-starter/proj foobar`,
    `cd foobar && git init && git add .`
-4. Play around and make sure everything works. Try `make`, `make test`,
-   `make clean`.
-5. Inspect all the files, replace all placeholders.
-   Anything that starts with `sample` should be
-   replaced. Additionally, some ALL-CAPS placeholders need to be
-   replaced in the opam files.
-   You can use `git grep sample .` to get the full list of files to modify.
-6. Rename any file that starts with `sample` e.g.
-   `git mv sample-lib.opam foobar.opam`. Other file
-   names are standard.
-7. Consult the [jbuilder docs](https://jbuilder.readthedocs.io/) as
+3. Play around and make sure everything works. Try `make`, `make test`,
+   `make install`, `make uninstall`, `make clean`.
+   Consult the project's readme (`proj/README.md`) for more info.
+4. Replace occurrences of `proj`, `sub1` and `sub2` by your own names.
+   Rename, throw away, and add files as needed.
+5. Consult the [jbuilder docs](https://jbuilder.readthedocs.io/) as
    needed.
 
-Thanks to the authors of jbuilder and @rgrinberg in particular for
+Thanks to the authors of dune (jbuilder) and @rgrinberg in particular for
 this great tool!

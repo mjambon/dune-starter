@@ -1,4 +1,2 @@
 #use "topfind";;
-#require "sample-lib";;
 open Printf;;
-
