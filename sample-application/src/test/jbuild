@@ -2,8 +2,8 @@
 
 (executable
  ((name run_tests)
-  (libraries (test-sub1
-              test-sub2))))
+  (libraries (test_sub1
+              test_sub2))))
 
 (alias
  ((name runtest)
