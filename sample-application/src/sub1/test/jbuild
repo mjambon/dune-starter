@@ -2,5 +2,5 @@
 
 (library
  ((name test_sub1)
-  (libraries (sub1))
+  (libraries (proj.sub1))
   (synopsis "Tests for sub1")))

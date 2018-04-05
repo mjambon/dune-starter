@@ -5,6 +5,6 @@
 open Printf
 
 let do_something () =
-  let unixtime = Sub1.A.now () in
+  let unixtime = Proj_sub1.A.now () in
   printf "%.3f seconds have elapsed since 1970-01-01T00:00:00.\n%!"
     unixtime

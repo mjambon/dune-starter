@@ -5,5 +5,5 @@
 (executables
  ((names (foo_main bar_main))
   (public_names (sub2-foo sub2-bar))
-  (libraries (sub1 sub2))
-  (package sub2)))
+  (libraries (proj.sub1 proj.sub2))
+  (package proj)))

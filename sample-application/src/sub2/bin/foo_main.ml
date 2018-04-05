@@ -12,7 +12,7 @@ open Printf
    command-line arguments.
 *)
 let run argv_offset =
-  Sub2.A.do_something ()
+  Proj_sub2.A.do_something ()
 
 let walk argv_offset =
   print_endline "Nice."
