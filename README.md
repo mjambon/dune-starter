@@ -8,22 +8,22 @@ It is structured to accommodate (in theory) non-OCaml components under
 `src/` and files other than source code at the project's root,
 e.g. you could create a global `doc/` folder next to `src/`.
 
-Requirements: opam, git, make, jbuilder.
+Requirements: opam, git, make, jbuilder (dune).
 
 ## How to set up your OCaml project:
 
 1. Clone this repository:
-   `git clone https://github.com/mjambon/jbuilder-starter`
+   `git clone https://github.com/mjambon/dune-starter`
 2. Copy files into a git repository e.g.
-   `cp -a jbuilder-starter/proj foobar`,
+   `cp -a dune-starter/proj foobar`,
    `cd foobar && git init && git add .`
 3. Play around and make sure everything works. Try `make`, `make test`,
    `make install`, `make uninstall`, `make clean`.
    Consult the project's readme (`proj/README.md`) for more info.
 4. Replace occurrences of `proj`, `sub1` and `sub2` by your own names.
    Rename, throw away, and add files as needed.
-5. Consult the [jbuilder docs](https://jbuilder.readthedocs.io/) as
+5. Consult the [dune docs](https://dune.readthedocs.io/) as
    needed.
 
-Thanks to the authors of dune (jbuilder) and @rgrinberg in particular for
+Thanks to the authors of dune and @rgrinberg in particular for
 this great tool!
