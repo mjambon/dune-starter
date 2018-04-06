@@ -6,6 +6,7 @@ bug-reports: "https://github.com/USERNAME/sample-application/issues"
 dev-repo: "https://github.com/USERNAME/sample-application.git"
 
 build: [
+  ["jbuilder" "subst"] {pinned}
   ["jbuilder" "build" "-p" name "-j" jobs]
 ]
 

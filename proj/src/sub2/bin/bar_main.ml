@@ -1,1 +1,1 @@
-print_endline "Hello!"
+print_endline "Hello! The version is %%VERSION%%"
