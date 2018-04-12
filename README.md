@@ -7,7 +7,7 @@ executables, and test suites.
 The project is structured as a collection of mostly self-contained
 subprojects, each with its source code and tests.
 
-Requirements: opam, git, make, jbuilder (dune).
+Requirements: opam, git, make, jbuilder (dune), alcotest.
 
 ## How to set up your OCaml project:
 
