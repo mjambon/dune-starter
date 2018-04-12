@@ -5,10 +5,10 @@
 default: build
 
 build:
-	jbuilder build
+	jbuilder build --dev
 
 test:
-	jbuilder runtest -f
+	jbuilder runtest -f --dev
 
 install:
 	jbuilder install

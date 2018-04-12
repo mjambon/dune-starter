@@ -11,10 +11,10 @@ open Printf
    You may want to use Arg.parse_argv to read the remaining
    command-line arguments.
 *)
-let run argv_offset =
+let run _argv_offset =
   Proj_sub2.A.do_something ()
 
-let walk argv_offset =
+let walk _argv_offset =
   print_endline "Nice."
 
 (* Add your own subcommands as needed. *)
@@ -25,7 +25,7 @@ let subcommands = [
 
 let help () =
   let subcommand_names =
-    String.concat "\n" (List.map (fun (name, f) -> "  " ^ name) subcommands)
+    String.concat "\n" (List.map (fun (name, _f) -> "  " ^ name) subcommands)
   in
   let usage_msg = sprintf "\
 Usage: %s SUBCOMMAND [ARGS]
