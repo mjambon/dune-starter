@@ -4,9 +4,8 @@ This repository provides templates to help you start an
 OCaml project. It can be used to create multiple libraries, multiple
 executables, and test suites.
 
-It is structured to accommodate (in theory) non-OCaml components under
-`src/` and files other than source code at the project's root,
-e.g. you could create a global `doc/` folder next to `src/`.
+The project is structured as a collection of mostly self-contained
+subprojects, each with its source code and tests.
 
 Requirements: opam, git, make, jbuilder (dune).
 
