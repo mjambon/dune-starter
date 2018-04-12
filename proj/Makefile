@@ -1,24 +1,23 @@
-# Invoke `make` to build, `make clean` to clean up, etc.
+# Frontend to dune.
 
 .PHONY: default build install uninstall utop test clean
 
 default: build
 
 build:
-	$(MAKE) -C src build
+	jbuilder build
 
-# Install all libraries and executables
+test:
+	jbuilder runtest -f
+
 install:
-	$(MAKE) -C src install
+	jbuilder install
 
 uninstall:
-	$(MAKE) -C src uninstall
-
-# Build and run tests
-test:
-	$(MAKE) -C src test
+	jbuilder uninstall
 
 clean:
-	$(MAKE) -C src clean
-# Remove remaining files/folders ignored by git as defined in .gitignore (-X).
+	jbuilder clean
+# Optionally, remove all files/folders ignored by git as defined
+# in .gitignore (-X).
 	git clean -dfXq
