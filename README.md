@@ -1,4 +1,4 @@
-# Dune/Jbuilder starter kit
+# Dune starter kit
 
 This repository provides templates to help you start an
 OCaml project. It can be used to create multiple libraries, multiple
@@ -7,7 +7,7 @@ executables, and test suites.
 The project is structured as a collection of mostly self-contained
 subprojects, each with its source code and tests.
 
-Requirements: opam, git, make, jbuilder (dune), alcotest.
+Requirements: opam, git, make, dune, alcotest.
 
 ## How to set up your OCaml project:
 

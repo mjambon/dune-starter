@@ -5,19 +5,19 @@
 default: build
 
 build:
-	jbuilder build
+	dune build
 
 test:
-	jbuilder runtest -f
+	dune runtest -f
 
 install:
-	jbuilder install
+	dune install
 
 uninstall:
-	jbuilder uninstall
+	dune uninstall
 
 clean:
-	jbuilder clean
+	dune clean
 # Optionally, remove all files/folders ignored by git as defined
 # in .gitignore (-X).
 	git clean -dfXq

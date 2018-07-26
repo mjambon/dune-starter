@@ -1,0 +1,10 @@
+; names = name of the files to compile into executables
+; public_names = name of the executables
+(executables
+ (names foo_main bar_main)
+ (public_names sub2-foo sub2-bar)
+ (libraries
+  proj.sub1
+  proj.sub2
+ )
+ (package proj))

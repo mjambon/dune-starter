@@ -6,13 +6,13 @@ bug-reports: "https://github.com/USERNAME/sample-application/issues"
 dev-repo: "https://github.com/USERNAME/sample-application.git"
 
 build: [
-  ["jbuilder" "subst"] {pinned}
-  ["jbuilder" "build" "-p" name "-j" jobs]
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
 ]
 
-build-test: ["jbuilder" "runtest" "-p" name]
+build-test: ["dune" "runtest" "-p" name]
 
 depends: [
-  "jbuilder" {build & >= "1.0+beta14"}
+  "dune" {build}
   "alcotest" {test}
 ]

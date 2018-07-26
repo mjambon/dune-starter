@@ -1,0 +1,9 @@
+(library
+ (name proj_sub2)
+ (public_name proj.sub2)
+ (libraries
+  unix
+  str
+  proj.sub1
+ )
+ (synopsis "This is a short description of the sub2 library."))

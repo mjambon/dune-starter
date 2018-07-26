@@ -22,12 +22,12 @@ $ make test
 How to use local libraries interactively
 --
 
-Use `jbuilder utop DIR` where DIR if the folder contains the `jbuild`
+Use `dune utop DIR` where DIR if the folder contains the `dune`
 file for a library. For instance, our `sub2` sample library can be
 used as follows:
 
 ```
-$ jbuilder utop sub2/lib
+$ dune utop sub2/lib
 ...
 utop # Proj_sub2.A.do_something ();;
 1525373137.245 seconds have elapsed since 1970-01-01T00:00:00.
@@ -39,7 +39,7 @@ Installation
 
 The project can be installed with or without opam.
 Without opam, you can run the following which relies directly on
-dune/jbuilder:
+dune:
 ```
 $ make install
 ```
