@@ -1,9 +1,9 @@
 opam-version: "1.2"
 maintainer: "YOUR EMAIL ADDRESS"
 authors: ["YOUR NAME"]
-homepage: "https://github.com/USERNAME/sample-application"
-bug-reports: "https://github.com/USERNAME/sample-application/issues"
-dev-repo: "https://github.com/USERNAME/sample-application.git"
+homepage: "https://github.com/USERNAME/proj"
+bug-reports: "https://github.com/USERNAME/proj/issues"
+dev-repo: "https://github.com/USERNAME/proj.git"
 
 build: [
   ["dune" "subst"] {pinned}
