@@ -24,6 +24,6 @@ build: [
 run-test: ["dune" "runtest" "-p" name]
 
 depends: [
-  "dune" {build}
+  "dune"
   "alcotest" {with-test}
 ]
