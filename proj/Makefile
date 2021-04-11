@@ -1,6 +1,7 @@
 # Frontend to dune.
 
 .PHONY: default build install uninstall test clean fmt
+.IGNORE: fmt
 
 default: build
 
