@@ -28,7 +28,7 @@ let help () =
        where SUBCOMMAND is one of:\n\
        %s\n\n\
        For help on a specific subcommand, try:\n\
-      \  %s SUBCOMMAND --help\n"
+       %s SUBCOMMAND --help\n"
       Sys.argv.(0) subcommand_names Sys.argv.(0)
   in
   eprintf "%s%!" usage_msg
