@@ -3,4 +3,4 @@
 *)
 
 val now : unit -> float
-  (** Returns the time since 1970 in seconds. *)
+(** Returns the time since 1970 in seconds. *)
