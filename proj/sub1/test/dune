@@ -1,4 +1,4 @@
 (library
  (name test_sub1)
- (libraries alcotest proj.sub1)
+ (libraries alcotest testo proj.sub1)
  (synopsis "Tests for sub1"))

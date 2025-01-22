@@ -1,3 +1,38 @@
 (lang dune 2.8)
-(name proj)      ; optional
-(version 0.0.0)  ; optional
+(name proj)      ; optional project name
+(version 0.0.0)  ; optional version for your project
+
+; Generate *.opam files that can be used to install dependencies
+; and later can be uploaded to opam-repository for distribution
+; via Opam.
+(generate_opam_files)
+
+; Choose a license if you're going to distribute your project
+; A list of standard license identifiers is available at
+; https://spdx.org/licenses/
+(license "ISC")
+
+; Project source and homepage, pre-filled for a project hosted by GitHub:
+(source (github USERNAME/PROJ))
+(homepage "https://github.com/USERNAME/PROJ")
+
+; Specify one or more maintainers and authors
+(maintainers "NAME <name@example.com>")
+(authors "NAME")
+
+; Opam packages defined by this project. One or more packages can be defined.
+; Each package can provide any number of executables and libraries.
+; The mapping from library or executable to a package is done in each
+; 'dune' file.
+(package
+  (name proj)
+  (synopsis "CATCHY HEADLINE")
+  (description "\
+A LONGER DESCRIPTION")
+  (depends
+    (ocaml (>= 4.08.0))
+    ocamlformat
+    alcotest
+    testo
+  )
+)

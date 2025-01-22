@@ -1,0 +1,11 @@
+(executable
+ (name run_tests)
+ (libraries
+  ; external libs
+  testo
+
+  ; local libs
+  test_sub1
+  test_sub2
+ )
+)
