@@ -7,7 +7,7 @@ executables, and test suites.
 The project is structured as a collection of mostly self-contained
 subprojects, each with its source code and tests.
 
-Requirements: opam, git, make, dune, alcotest.
+Requirements: opam, git, make, dune.
 
 ## How to set up your OCaml project:
 
@@ -16,8 +16,9 @@ Requirements: opam, git, make, dune, alcotest.
 2. Copy files into a git repository e.g.
    `cp -a dune-starter/proj foobar`,
    `cd foobar && git init && git add .`
-3. Play around and make sure everything works. Try `make`, `make test`,
-   `make install`, `make uninstall`, `make clean`.
+3. Play around and make sure everything works. Try `make setup`
+   to install the missing Opam packages, `make` to build the project,
+   `make test`, `make install`, `make uninstall`, `make clean`.
    Consult the project's readme (`proj/README.md`) for more info.
 4. Replace occurrences of `proj`, `sub1` and `sub2` by your own names.
    Rename, throw away, and add files as needed.
