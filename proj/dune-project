@@ -16,7 +16,9 @@
 (source (github USERNAME/PROJ))
 (homepage "https://github.com/USERNAME/PROJ")
 
-; Specify one or more maintainers and authors
+; Specify one or more maintainers and authors.
+; A list of author names can be obtained mechanically from git with
+; 'git shortlog -s -n'.
 (maintainers "NAME <name@example.com>")
 (authors "NAME")
 
